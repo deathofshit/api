@@ -1,0 +1,32 @@
+{
+  "name": "@eksisozluk/api",
+  "version": "0.1.0",
+  "description": "kutsal bilgi kaynağı",
+  "homepage": "https://eksisozluk.herokuapp.com/",
+  "private": true,
+  "author": {
+    "name": "Gökay Gürcan",
+    "email": "info@gokaygurcan.com",
+    "url": "https://www.gokaygurcan.com/"
+  },
+  "copyright": "2016",
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eksisozluk/api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eksisozluk/api/issues"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "ekşi",
+    "sözlük",
+    "api"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
+}
