@@ -44,7 +44,7 @@ app.use(cookieParser());
 
 // simple session middleware
 app.use(session({
-  secret: process.env.SESSION_SECRET || 'eksisozluk',
+  secret: process.env.SESSION_SECRET || 'eksisozluk',
   resave: true,
   saveUninitialized: true,
   cookie: {
