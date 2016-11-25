@@ -13,6 +13,7 @@ const express = require('express');
 const favicon = require('serve-favicon');
 const flash = require('connect-flash');
 const morgan = require('morgan');
+const sass = require('node-sass-middleware');
 const session = require('express-session');
 
 // local packages
@@ -37,6 +38,15 @@ app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 // static folder
 app.use(express.static('./public'));
+
+// sass middleware
+app.use(sass({
+  src: path.join(__dirname, 'public'),
+  dest: path.join(__dirname, 'public'),
+  debug: process.env.NODE_ENV !== 'production',
+  force: true,
+  sourceMap: true
+}));
 
 // process requests
 app.use(bodyParser.urlencoded({
