@@ -12,6 +12,7 @@ const cookieParser = require('cookie-parser');
 const express = require('express');
 const favicon = require('serve-favicon');
 const flash = require('connect-flash');
+const morgan = require('morgan');
 const session = require('express-session');
 
 // local packages
@@ -23,6 +24,10 @@ const port = process.env.PORT || 3000;
 
 // application settings
 app.set('trust proxy', 1);
+
+// log requests to the console
+// :remote-addr :remote-user :method :url HTTP/:http-version :status :res[content-length] - :response-time ms
+app.use(morgan('short'));
 
 // compress response
 app.use(compression());
