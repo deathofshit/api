@@ -20,9 +20,9 @@
     "url": "https://github.com/eksisozluk/api/issues"
   },
   "scripts": {
-    "start": "node index.js"
     "start": "node index.js",
-    "test": "xo"
+    "test": "xo",
+    "postpublish": "greenkeeper-postpublish"
   },
   "engines": {
     "node": ">=6 <7",
@@ -36,10 +36,14 @@
   "dependencies": {},
   "devDependencies": {}
   "devDependencies": {
+    "greenkeeper-postpublish": "^1.0.1",
     "xo": "^0.17.1"
   },
   "xo": {
     "esnext": true,
     "space": 2
+  },
+  "greenkeeper": {
+    "ignore": []
   }
 }
