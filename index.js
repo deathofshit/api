@@ -2,8 +2,12 @@
 
 'use strict';
 
+// core packages
+const path = require('path');
+
 // node packages
 const express = require('express');
+const favicon = require('serve-favicon');
 
 // local packages
 const routes = require('./routes');
@@ -12,12 +16,11 @@ const routes = require('./routes');
 const app = express();
 const port = process.env.PORT || 3000;
 
-// route
-app.use('/', (req, res) => {
-  res.status(200).json({
-    version: pkg.version
-  });
-});
+// favicon
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+
+// static folder
+app.use(express.static('./public'));
 
 // routes
 app.use('/', routes);
