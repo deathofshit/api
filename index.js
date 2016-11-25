@@ -6,7 +6,7 @@
 const express = require('express');
 
 // local packages
-const pkg = require('./package.json');
+const routes = require('./routes');
 
 // vars
 const app = express();
@@ -18,6 +18,9 @@ app.use('/', (req, res) => {
     version: pkg.version
   });
 });
+
+// routes
+app.use('/', routes);
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {

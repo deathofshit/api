@@ -42,7 +42,10 @@
   },
   "xo": {
     "esnext": true,
-    "space": 2
+    "space": 2,
+    "rules": {
+      "new-cap": 0
+    }
   },
   "greenkeeper": {
     "ignore": []
