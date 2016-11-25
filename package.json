@@ -33,8 +33,9 @@
     "sözlük",
     "api"
   ],
-  "dependencies": {},
-  "devDependencies": {}
+  "dependencies": {
+    "express": "^4.14.0"
+  },
   "devDependencies": {
     "greenkeeper-postpublish": "^1.0.1",
     "xo": "^0.17.1"
