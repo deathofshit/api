@@ -1,6 +1,12 @@
-# api
+<h1 align="center">
+	<br>
+	<img width="800" src="https://eksisozluk.com/content/img/new-design/eksisozluk_logo.svg" alt="ekşi sözlük">
+	<br>
+  <br>
+  <br>
+</h1>
 
-kutsal bilgi kaynağı
+> kutsal bilgi kaynağı
 
 [![website](https://img.shields.io/website/https/eksisozluk.herokuapp.com.svg?style=flat-square)](https://eksisozluk.herokuapp.com)
 [![license](https://img.shields.io/github/license/eksisozluk/api.svg?style=flat-square)](https://github.com/eksisozluk/api)
