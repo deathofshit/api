@@ -21,6 +21,8 @@
   },
   "scripts": {
     "start": "node index.js"
+    "start": "node index.js",
+    "test": "xo"
   },
   "engines": {
     "node": ">=6 <7",
@@ -33,4 +35,11 @@
   ],
   "dependencies": {},
   "devDependencies": {}
+  "devDependencies": {
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 2
+  }
 }
