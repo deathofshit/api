@@ -1,0 +1,69 @@
+{
+  "name": "@eksisozluk/api",
+  "version": "0.1.0",
+  "description": "kutsal bilgi kaynağı",
+  "homepage": "https://eksisozluk.herokuapp.com/",
+  "private": true,
+  "author": {
+    "name": "Gökay Gürcan",
+    "email": "info@gokaygurcan.com",
+    "url": "https://www.gokaygurcan.com/"
+  },
+  "copyright": "2016",
+  "license": "GPL-3.0",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eksisozluk/api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/eksisozluk/api/issues"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "test": "xo",
+    "postpublish": "greenkeeper-postpublish"
+  },
+  "engines": {
+    "node": ">=6 <7",
+    "npm": ">=4"
+  },
+  "keywords": [
+    "ekşi",
+    "sözlük",
+    "api"
+  ],
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "compression": "^1.6.2",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.0",
+    "express-hbs": "^1.0.3",
+    "express-session": "^1.14.2",
+    "morgan": "^1.7.0",
+    "node-sass-middleware": "^0.10.0",
+    "serve-favicon": "^2.3.2"
+  },
+  "devDependencies": {
+    "greenkeeper-postpublish": "^1.0.1",
+    "xo": "^0.17.1"
+  },
+  "xo": {
+    "esnext": true,
+    "space": 2,
+    "rules": {
+      "new-cap": 0,
+      "brace-style": [
+        "error", 
+        "stroustrup", 
+        {
+          "allowSingleLine": true 
+        }
+      ]       
+    }
+  },
+  "greenkeeper": {
+    "ignore": []
+  }
+}
