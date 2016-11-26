@@ -21,4 +21,4 @@ GNU General Public Licence v3.0
 
 ## Disclaimer
 
-`ekşisözlük` name, its variations and the logo are registered trademarks of [ekşi teknoloji ve bilişim a.ş.](http://eksiteknoloji.com/).
+`ekşisözlük` name, its variations and the logo are registered trademarks of [ekşi teknoloji ve bilişim a.ş.](http://eksiteknoloji.com/)
