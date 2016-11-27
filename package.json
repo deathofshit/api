@@ -1,6 +1,6 @@
 {
   "name": "@eksisozluk/api",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "kutsal bilgi kaynağı",
   "homepage": "https://eksisozluk.herokuapp.com/",
   "private": true,
@@ -59,12 +59,12 @@
     "rules": {
       "new-cap": 0,
       "brace-style": [
-        "error", 
-        "stroustrup", 
+        "error",
+        "stroustrup",
         {
-          "allowSingleLine": true 
+          "allowSingleLine": true
         }
-      ]       
+      ]
     }
   },
   "greenkeeper": {
