@@ -14,6 +14,7 @@ const favicon = require('serve-favicon');
 const flash = require('connect-flash');
 const hbs = require('express-hbs');
 const morgan = require('morgan');
+const passport = require('passport');
 const sass = require('node-sass-middleware');
 const session = require('express-session');
 
@@ -76,6 +77,10 @@ app.use(session({
   }
 }));
 
+// passport settings
+app.use(passport.initialize());
+app.use(passport.session());
+
 // simple flash messages
 app.use(flash());
 
@@ -113,5 +118,5 @@ app.listen(port, err => {
     return console.error(err);
   }
 
-  console.log('eksisozluk api is ready! \n');
+  console.log('eksisozluk api is ready!\n');
 });

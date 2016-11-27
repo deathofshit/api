@@ -5,6 +5,6 @@
 exports.get = (req, res) => {
   res.status(501);
   res.json({
-    error: 'Not Implemented'  
+    error: 'Not Implemented'
   });
 };

@@ -84,6 +84,45 @@ section {
       color: #78a960;
     }
   }
+
+  &.dashboard {
+    display: block;
+    margin: 50px auto 0 auto;
+    width: 70%;
+
+    div.left {
+      display: inline-block;
+      float: left;
+      width: 50%;
+
+      img.photo {
+        margin-left: 100px;
+        width: 250px;
+      }
+    }
+
+    div.right {
+      display: inline-block;
+      float: left;
+      width: 50%;
+
+      h1.name {
+        font-size: 30px;
+        line-height: 40px;
+      }
+
+      div.details {
+        font-size: 15px;
+        line-height: 25px;
+
+        p {
+          span {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
 }
 
 footer {
