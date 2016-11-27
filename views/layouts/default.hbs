@@ -14,6 +14,12 @@
     <link rel="stylesheet" href="{{ asset '/css/style.css' }}" />
   </head>
   <body>
-    {{{ body }}}
+    {{> header }}
+
+    <main>
+      {{{ body }}}
+    </main>
+
+    {{> footer }}
   </body>
 </html>

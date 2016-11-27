@@ -1,6 +1,6 @@
 {
   "name": "@eksisozluk/api",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "kutsal bilgi kaynağı",
   "homepage": "https://eksisozluk.herokuapp.com/",
   "private": true,
@@ -22,7 +22,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "xo",
-    "postpublish": "greenkeeper-postpublish"
+    "postpublish": "greenkeeper-postpublish",
+    "ab": "ab -n 5000 -c 100 http://localhost:3000/"
   },
   "engines": {
     "node": ">=6 <7",
@@ -43,7 +44,10 @@
     "express-session": "^1.14.2",
     "morgan": "^1.7.0",
     "node-sass-middleware": "^0.10.0",
-    "serve-favicon": "^2.3.2"
+    "passport": "^0.3.2",
+    "passport-github": "^1.1.0",
+    "serve-favicon": "^2.3.2",
+    "toobusy-js": "^0.5.1"
   },
   "devDependencies": {
     "greenkeeper-postpublish": "^1.0.1",
@@ -55,12 +59,12 @@
     "rules": {
       "new-cap": 0,
       "brace-style": [
-        "error", 
-        "stroustrup", 
+        "error",
+        "stroustrup",
         {
-          "allowSingleLine": true 
+          "allowSingleLine": true
         }
-      ]       
+      ]
     }
   },
   "greenkeeper": {
