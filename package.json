@@ -22,7 +22,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "xo",
-    "postpublish": "greenkeeper-postpublish"
+    "postpublish": "greenkeeper-postpublish",
+    "ab": "ab -n 5000 -c 100 http://localhost:3000/"
   },
   "engines": {
     "node": ">=6 <7",
@@ -45,7 +46,8 @@
     "node-sass-middleware": "^0.10.0",
     "passport": "^0.3.2",
     "passport-github": "^1.1.0",
-    "serve-favicon": "^2.3.2"
+    "serve-favicon": "^2.3.2",
+    "toobusy-js": "^0.5.1"
   },
   "devDependencies": {
     "greenkeeper-postpublish": "^1.0.1",

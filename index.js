@@ -17,6 +17,7 @@ const morgan = require('morgan');
 const passport = require('passport');
 const sass = require('node-sass-middleware');
 const session = require('express-session');
+const toobusy = require('toobusy-js');
 
 // local packages
 const helpers = require('./helpers');
@@ -38,6 +39,18 @@ helpers.forEach(helper => {
 // log requests to the console
 // :remote-addr :remote-user :method :url HTTP/:http-version :status :res[content-length] - :response-time ms
 app.use(morgan('short'));
+
+// prevent abuse with rate limiting
+app.use((req, res, next) => {
+  if (toobusy()) {
+    const err = new Error('Too Many Requests');
+    err.status = 429;
+    next(err);
+  }
+  else {
+    next();
+  }
+});
 
 // compress response
 app.use(compression());
@@ -113,10 +126,16 @@ app.use((err, req, res) => {
 });
 
 // start server
-app.listen(port, err => {
+const server = app.listen(port, err => {
   if (err) {
     return console.error(err);
   }
 
   console.log('eksisozluk api is ready!\n');
+});
+
+process.on('SIGINT', () => {
+  server.close();
+  toobusy.shutdown();
+  process.exit();
 });
