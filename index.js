@@ -30,6 +30,7 @@ const production = process.env.NODE_ENV === 'production';
 
 // application settings
 app.set('trust proxy', 1);
+app.disable('x-powered-by');
 
 // register custom hbs helpers
 helpers.forEach(helper => {
