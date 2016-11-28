@@ -36,7 +36,7 @@ exports.get = (req, res) => {
   }
   else {
     github.validateToken(accessToken, valid => {
-      if (valid !== true) {
+      if (valid === false) {
         res.status(401);
         res.json({
           error: 'Unauthorized',

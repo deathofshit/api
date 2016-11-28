@@ -33,6 +33,9 @@ const github = {
         callback(valid);
       })
       .catch(err => {
+        if (err) {
+          callback(false, err); // handle this later
+        }
         callback(false);
       });
   }
