@@ -10,9 +10,10 @@
 
 [![website](https://img.shields.io/website/https/eksisozluk.herokuapp.com.svg?style=flat-square)](https://eksisozluk.herokuapp.com)
 [![build status](https://img.shields.io/travis/eksisozluk/api.svg?style=flat-square)](https://travis-ci.org/eksisozluk/api)
-[![appveyor](https://img.shields.io/appveyor/ci/eksisozluk/api.svg?style=flat-square)](https://ci.appveyor.com/project/gokaygurcan/api)
+[![appveyor](https://img.shields.io/appveyor/ci/gokaygurcan/api.svg?style=flat-square)](https://ci.appveyor.com/project/gokaygurcan/api)
+[![code climate](https://img.shields.io/codeclimate/github/eksisozluk/api.svg?style=flat-square)](https://codeclimate.com/github/eksisozluk/api)
 [![license](https://img.shields.io/github/license/eksisozluk/api.svg?style=flat-square)](https://github.com/eksisozluk/api)
-
+ 
 ---
 
 
