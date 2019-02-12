@@ -1,7 +1,7 @@
 {
   "name": "@eksisozluk/api",
   "version": "0.2.2",
-  "description": "kutsal bilgi kaynağı",
+  "description": "kutsal bilgi kaynağı (unofficial)",
   "homepage": "https://eksisozluk.herokuapp.com/",
   "private": true,
   "author": {
@@ -12,10 +12,7 @@
   "copyright": "2016",
   "license": "GPL-3.0",
   "main": "index.js",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/eksisozluk/api.git"
-  },
+  "repository": "eksisozluk/api",
   "bugs": {
     "url": "https://github.com/eksisozluk/api/issues"
   },
@@ -25,37 +22,33 @@
     "postpublish": "greenkeeper-postpublish",
     "ab": "ab -n 5000 -c 100 http://localhost:3000/"
   },
-  "engines": {
-    "node": ">=6 <7",
-    "npm": ">=4"
-  },
   "keywords": [
     "ekşi",
     "sözlük",
     "api"
   ],
   "dependencies": {
-    "body-parser": "^1.15.2",
-    "compression": "^1.6.2",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
     "connect-flash": "^0.1.1",
     "cookie-parser": "^1.4.3",
-    "eksisozluk": "^0.2.3",
-    "express": "^4.14.0",
-    "express-hbs": "^1.0.3",
-    "express-session": "^1.14.2",
-    "lodash": "^4.17.2",
-    "morgan": "^1.7.0",
+    "eksisozluk": "^0.3.0",
+    "express": "^4.16.4",
+    "express-hbs": "^2.0.2",
+    "express-session": "^1.15.6",
+    "lodash": "^4.17.11",
+    "morgan": "^1.9.1",
     "node-sass-middleware": "^0.11.0",
-    "passport": "^0.3.2",
+    "passport": "^0.4.0",
     "passport-github": "^1.1.0",
-    "request": "^2.79.0",
-    "request-promise": "^4.1.1",
-    "serve-favicon": "^2.3.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "serve-favicon": "^2.5.0",
     "toobusy-js": "^0.5.1"
   },
   "devDependencies": {
-    "greenkeeper-postpublish": "^1.0.1",
-    "xo": "^0.17.1"
+    "greenkeeper-postpublish": "^2.0.0",
+    "xo": "^0.24.0"
   },
   "xo": {
     "esnext": true,
@@ -68,7 +61,15 @@
         {
           "allowSingleLine": true
         }
-      ]
+      ],
+      "capitalized-comments": 0,
+      "unicorn/catch-error-name": [
+        "error",
+        {
+          "name": "err"
+        }
+      ],
+      "prefer-destructuring": 0
     }
   },
   "greenkeeper": {
