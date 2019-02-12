@@ -17,7 +17,7 @@ const github = {
       headers: {
         'User-Agent': pkg.name + ' (' + pkg.version + ')',
         'Content-Type': 'application/json; charset=utf-8',
-        authorization: 'Basic ' + new Buffer(process.env.GITHUB_CLIENT_ID + ':' + process.env.GITHUB_CLIENT_SECRET).toString('base64')
+        authorization: 'Basic ' + Buffer.from(process.env.GITHUB_CLIENT_ID + ':' + process.env.GITHUB_CLIENT_SECRET).toString('base64')
       },
       json: true
     };
