@@ -35,7 +35,7 @@
     "eksisozluk": "^0.3.0",
     "express": "^4.16.4",
     "express-hbs": "^2.0.2",
-    "express-session": "^1.15.6",
+    "express-session": "1.16.1",
     "lodash": "^4.17.11",
     "morgan": "^1.9.1",
     "node-sass-middleware": "^0.11.0",
