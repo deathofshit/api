@@ -1,0 +1,20 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.5
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  SNYK-JS-LODASH-450202:
+    - lodash:
+        patched: '2019-07-08T01:37:46.943Z'
+    - express-hbs > lodash:
+        patched: '2019-07-08T01:37:46.943Z'
+    - request-promise > request-promise-core > lodash:
+        patched: '2019-07-08T01:37:46.943Z'
+    - node-sass-middleware > node-sass > lodash:
+        patched: '2019-07-08T01:37:46.943Z'
+    - eksisozluk > request-promise > request-promise-core > lodash:
+        patched: '2019-07-08T01:37:46.943Z'
+    - node-sass-middleware > node-sass > sass-graph > lodash:
+        patched: '2019-07-08T01:37:46.943Z'
+    - node-sass-middleware > node-sass > gaze > globule > lodash:
+        patched: '2019-07-08T01:37:46.943Z'

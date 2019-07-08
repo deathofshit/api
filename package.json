@@ -20,7 +20,9 @@
     "start": "node index.js",
     "test": "xo",
     "postpublish": "greenkeeper-postpublish",
-    "ab": "ab -n 5000 -c 100 http://localhost:3000/"
+    "ab": "ab -n 5000 -c 100 http://localhost:3000/",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "keywords": [
     "ekşi",
@@ -44,7 +46,8 @@
     "request": "^2.88.0",
     "request-promise": "^4.2.2",
     "serve-favicon": "^2.5.0",
-    "toobusy-js": "^0.5.1"
+    "toobusy-js": "^0.5.1",
+    "snyk": "^1.192.3"
   },
   "devDependencies": {
     "greenkeeper-postpublish": "^2.0.0",
@@ -74,5 +77,6 @@
   },
   "greenkeeper": {
     "ignore": []
-  }
+  },
+  "snyk": true
 }
